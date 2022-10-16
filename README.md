@@ -20,7 +20,7 @@ function getProp(m){
 
 ## Simple Confirm Box
 ```js
-getProps("confirm")("content", "title", function(answer){console.log(answer)})
+getProp("confirm")("content", "title", function(answer){console.log(answer)})
 ```
 
 ## Zalo Destroyer
