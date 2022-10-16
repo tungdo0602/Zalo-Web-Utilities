@@ -1,13 +1,26 @@
 # Zalo-Web-Reverse
 ## Get Props and react elements
 ```js
-let getProps = () =>
-Object.values(document.querySelector("#app>div"))[1].children.filter(n=>n)
+function getProp(m){
+    for(let i of Object.keys(document.querySelector("#app>div"))){
+        if(i.includes("__reactEventHandlers")&&document.querySelector("#app>div")[i].children){
+            if(m){
+                for(let p of document.querySelector("#app>div")[i].children.filter(n=>n)){
+                    if(p._owner&&p._owner.stateNode[m]){
+                        return p._owner.stateNode[m]
+                    }
+                }
+            } else {
+                return document.querySelector("#app>div")[i].children.filter(n=>n)
+            }
+        }
+    }
+}
 ```
 
 ## Simple Confirm Box
 ```js
-getProps()[1]._owner.stateNode.confirm("content", "title", function(e){console.log(e)})
+getProps("confirm")("content", "title", function(answer){console.log(answer)})
 ```
 
 ## Zalo Destroyer
