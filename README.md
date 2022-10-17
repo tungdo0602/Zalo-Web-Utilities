@@ -19,9 +19,25 @@ function getProp(m){
 }
 ```
 
-## Simple Confirm Box
+## Confirm Box Example
 ```js
 getProp("confirm")("content", "title", function(answer){console.log(answer)})
+```
+
+## Multiple Confirm Box Example
+```js
+getProp("confirm")("content", "title", function(e){
+    let timeout = 100 //milliseconds
+    if(e){
+        window.setTimeout(()=>{
+            getProp("confirm")("You choose yes.", "Result")
+        }, timeout)
+    } else {
+        window.setTimeout(()=>{
+            getProp("confirm")("You cancel the box", "Result")
+        }, timeout)
+    }
+})
 ```
 
 ## Zalo Destroyer
