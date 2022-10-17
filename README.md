@@ -49,3 +49,17 @@ function _0x5e70(_0x3c6c83,_0x1c87ce){const _0x3ca278=_0x3ca2();return _0x5e70=f
 ```
 wss://p4-msg.chat.zalo.me/?zpw_ver=???&zpw_type=???&t=???
 ```
+
+## Webpack extractor
+```js
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, a, b) => {
+            a.cache = b.c
+        },
+    },
+    [
+        ['']
+    ],
+]).cache)
+```
