@@ -52,7 +52,8 @@ wss://p4-msg.chat.zalo.me/?zpw_ver=???&zpw_type=???&t=???
 
 ## Webpack extractor
 ```js
-Object.values(webpackJsonp.push([
+function getProps(){
+    return Object.values(webpackJsonp.push([
     [], {
         ['']: (_, a, b) => {
             a.cache = b.c
@@ -62,4 +63,5 @@ Object.values(webpackJsonp.push([
         ['']
     ],
 ]).cache)
+}
 ```
