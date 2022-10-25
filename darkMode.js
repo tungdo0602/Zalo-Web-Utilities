@@ -1,5 +1,3 @@
 window.setInterval(()=>{
-    Array.from(document.querySelectorAll("div")).map(n=>n.style.color='blue');
-    Array.from(document.querySelectorAll("div")).map(n=>n.style.backgroundColor='black');
+    Array.from(document.getElementsByTagName("*")).map(n=>n.style.backgroundColor="black");Array.from(document.getElementsByTagName("*")).map(n=>n.style.color="blue");
 });
-//Lol
