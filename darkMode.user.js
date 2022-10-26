@@ -30,7 +30,7 @@ document.body.appendChild(zlRB);
 }
 window.setInterval(()=>{
     Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet):not(.flx-al-c.fake-textholder.truncate.fk-normal):not(#scroll-vertical):not(#scroll-vertical>div)")).map(n=>n.style.backgroundColor="black");
-    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet)")).map(n=>n.className+=" rbtext");
+    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet)")).map(n=>{if(!n.className.includes("rbtext"))n.className+=" rbtext"});
     Array.from(document.querySelectorAll("div:not(#scroll-vertical>div):not(#scroll-vertical)")).map(n=>n.style.borderColor='blue');
     Array.from(document.querySelectorAll("#scroll-vertical>div")).map(n=>n.style.backgroundColor='blue');
 });
