@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zalo Dark Mode
 // @namespace    https://github.com/tungdo0602/Zalo-Web-Utilities/blob/main/darkMode.js
-// @version      0.2.1
+// @version      0.2.2
 // @description  Simple Dark Mode
 // @author       tungdo0602 (https://github.com/tungdo0602)
 // @match        *://*.zalo.me/*
@@ -16,8 +16,7 @@ window.setInterval(()=>{
     //Array.from(document.querySelectorAll("div:not(#scroll-vertical>div):not(#scroll-vertical)")).map(n=>n.style.borderColor='#282c34');
     Array.from(document.querySelectorAll("#scroll-vertical>div:not(style):not(script)")).map(n=>n.style.backgroundColor='#d3d3d3');
     try{
-        document.querySelector(".setting--bottom").parentElement.style.marginRight='-6.25px';
-        document.querySelector(".message-view__scroll__inner").parentElement.style.marginRight='-6.25';
+        document.querySelector(".setting--bottom").parentElement.style.marginRight=document.querySelector("#messageViewScroll").parentElement.style.marginRight='-6.25px';
     }catch{}
 });
 })();
