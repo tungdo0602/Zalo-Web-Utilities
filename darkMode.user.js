@@ -11,9 +11,9 @@
 // ==/UserScript==
 (function(){
 window.setInterval(()=>{
-    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet):not(.flx-al-c.fake-textholder.truncate.fk-normal):not(#scroll-vertical):not(#scroll-vertical>div)")).map(n=>n.style.backgroundColor='#23272e');
-    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet):not(.zl-avatar)")).map(n=>n.style.color='#abb2bf');
+    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet):not(.flx-al-c.fake-textholder.truncate.fk-normal):not(#scroll-vertical):not(#scroll-vertical>div):not(style):not(script)")).map(n=>n.style.backgroundColor='#23272e');
+    Array.from(document.querySelectorAll("*:not(.zl-avatar__alphabet):not(.zl-avatar):not(style):not(script)")).map(n=>n.style.color='#abb2bf');
     //Array.from(document.querySelectorAll("div:not(#scroll-vertical>div):not(#scroll-vertical)")).map(n=>n.style.borderColor='#282c34');
-    Array.from(document.querySelectorAll("#scroll-vertical>div")).map(n=>n.style.backgroundColor='#d3d3d3');
+    Array.from(document.querySelectorAll("#scroll-vertical>div:not(style):not(script)")).map(n=>n.style.backgroundColor='#d3d3d3');
 });
 })();
