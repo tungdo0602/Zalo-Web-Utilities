@@ -16,7 +16,10 @@ window.setInterval(()=>{
     //Array.from(document.querySelectorAll("div:not(#scroll-vertical>div):not(#scroll-vertical)")).map(n=>n.style.borderColor='#282c34');
     Array.from(document.querySelectorAll("#scroll-vertical>div:not(style):not(script)")).map(n=>n.style.backgroundColor='#d3d3d3');
     try{
-        document.querySelector(".setting--bottom").parentElement.style.marginRight=document.querySelector("#messageViewScroll").parentElement.style.marginRight='-6.25px';
+        document.querySelector(".setting--bottom").parentElement.style.marginRight='-6.25px';
+    }catch{}
+    try{
+        document.querySelector("#messageViewScroll").parentElement.style.marginRight='-6.25px';
     }catch{}
 });
 })();
