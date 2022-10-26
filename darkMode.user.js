@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zalo Dark Mode
 // @namespace    https://github.com/tungdo0602/Zalo-Web-Utilities/blob/main/darkMode.js
-// @version      0.2.2
+// @version      0.3
 // @description  Simple Dark Mode
 // @author       tungdo0602 (https://github.com/tungdo0602)
 // @match        *://*.zalo.me/*
