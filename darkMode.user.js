@@ -21,7 +21,7 @@ zlRB.innerText = `
 }
 
 @keyframes color-change {
-  0% { color: red; }
+  0% { color: green; }
   50% { color: blue; }
   100% { color: green; }
 }
