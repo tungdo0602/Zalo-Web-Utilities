@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 if(!document.querySelector("#zlRB")){
-zlRB = document.createElement("style");
+let zlRB = document.createElement("style");
 zlRB.id = 'zlRB';
 zlRB.innerText = `
 .rbtext {
