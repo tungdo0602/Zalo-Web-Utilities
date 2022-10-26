@@ -16,7 +16,7 @@ if(!document.querySelector("#zlRB")){
 let zlRB = document.createElement("style");
 zlRB.id = 'zlRB';
 zlRB.innerText = `
-.rbtext {
+.rbtext:not(.zl-avatar__alphabet) {
   animation: color-change 2.5s infinite;
 }
 
